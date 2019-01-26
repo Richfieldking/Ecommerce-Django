@@ -11,5 +11,8 @@ class Product(models.Model):
 
 
 	def __unicode__(self):
-		return str(self.price)
+		return str(self.title)
+
+	def get_price(self):
+    		return self.price	
 
