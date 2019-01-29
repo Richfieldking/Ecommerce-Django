@@ -39,17 +39,18 @@ integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706t
   {% include "products/nav.html" %}
   <main role="main" class="container">
   <div>
-  {% block content %}
-  {% endblock%}
   </div>
   <div class="container">
     <div class="jumbotron">
       <h1>Hello {{ username_is }}</h1>
-      <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-      <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.2/components/navbar/" role="button">View navbar docs &raquo;</a>
+      <p class="lead">Welcome to my Ecommerce site where u can purchase all you want</p>
+      <a class="btn btn-lg btn-primary" href="#" role="button">Purchase &raquo;</a>
     </div>
 
   </div>
+  
+  {% block content %}
+  {% endblock%}
 
 </main>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

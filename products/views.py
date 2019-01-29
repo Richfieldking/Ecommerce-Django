@@ -15,10 +15,16 @@ def home(request):
     return render(request, templates, context)
 
 def all(request):
+       if request.method=='POST':
+           username_is = "Richfield"
+           hey= {"username_is": request.user}
+       else:
+           hey = {"username_is": request.user}
        
        products= Product.objects.all()
        context = {
-          'products':products
+          'products':products,
+          "hey":request.user
 
        }
        template = "products/all.html"
