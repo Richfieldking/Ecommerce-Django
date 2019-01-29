@@ -11,7 +11,7 @@ def home(request):
     else:
            context = {"username_is": request.user}
 
-    templates = "products/base.html"
+    templates = "products/home.html"
     return render(request, templates, context)
 
 def all(request):

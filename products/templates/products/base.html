@@ -38,6 +38,10 @@ integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706t
   
   {% include "products/nav.html" %}
   <main role="main" class="container">
+  <div>
+  {% block content %}
+  {% endblock%}
+  </div>
   <div class="container">
     <div class="jumbotron">
       <h1>Hello {{ username_is }}</h1>

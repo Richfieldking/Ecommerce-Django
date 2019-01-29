@@ -7,5 +7,5 @@ urlpatterns = [
     
     url(r'^admin/', admin.site.urls),
     
-    url(r'^products/', include('products.urls')),
+    url('', include('products.urls')),
 ]
